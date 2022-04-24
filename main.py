@@ -10,14 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
-from streamlit_lottie import st_lottie
-from streamlit_lottie import st_lottie_spinner
 
-def load_lottieurl(url:str):
-    r=requests.get(url)
-    if r.status_code!=200:
-        return None
-    return r.json()
 st.title("ML PlayGround")
 st.write("""
 # Explore different classifiers on different datasets:
